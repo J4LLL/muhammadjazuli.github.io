@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>PORTOFOLIO - MUHAMMAD JAZULI</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        margin: 0;
+        font-family: "Roboto", sans-serif;
+        background-color: #e9ecef;
+      }
+      .navbar {
+        background-color: #e61ae6;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .navbar a {
+        color: white;
+        text-decoration: none;
+        margin: 0 1rem;
+      }
+      .navbar .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: white;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      .dropdown-content a:hover {
+        background-color: #f1f1f1;
+      }
+      .dropdown:hover .dropdown-content {
+        display: block;
+      }
+      /* Reset beberapa gaya default */
+      body,
+      h1,
+      h2,
+      p {
+        margin: 0;
+        padding: 0;
+      }
+
+      /* Gaya untuk keseluruhan halaman */
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f4;
+        color: #333;
+      }
+
+      .navbar a:hover {
+        background-color: #575757;
+      }
+
+      /* Gaya untuk section */
+      section {
+        padding: 20px;
+        margin: 20px 0;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Gaya untuk gambar */
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+
+      /* Gaya untuk biodata */
+      .biodata {
+        background-color: #e2f0d9;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      /* Gaya untuk pendidikan */
+      .pendidikan {
+        background-color: #d9f0e2;
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 20px;
+      }
+
+      /* Gaya untuk cerita */
+      .cerita {
+        background-color: #d9e2f0;
+        padding: 20px;
+        border-radius: 8px;
+      }
+
+      /* Gaya untuk judul */
+      h1 {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      h2 {
+        margin-bottom: 15px;
+        color: #2c3e50;
+      }
+
+      /* Gaya untuk daftar pendidikan */
+      .pendidikan ul {
+        list-style-type: none; /* Menghilangkan bullet */
+        padding: 0; /* Menghilangkan padding */
+      }
+
+      .pendidikan li {
+        background-color: #fff;
+        margin: 10px 0; /* Margin antar item */
+        padding: 10px; /* Padding dalam item */
+        border-radius: 5px; /* Sudut membulat */
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2); /* Bayangan */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">
+        <a href="#"> Muhamad Jazuli</a>
+      </div>
+      <div class="nav-links">
+        <a href="../index.html"> Home </a>
+        <a href="../portofolio/portofolio.html"> Portofolio </a>
+        <div class="dropdown">
+          <a href="#">
+            Project
+            <i class="fas fa-caret-down"> </i>
+          </a>
+          <div class="dropdown-content">
+            <a href="../bayi/bayi.html">Bayi</a>
+            <a href="../kalkulator/kalkulator.html"> kalkulator </a>
+            <a href="../youtube/youtube.html"> youtube </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="home"><h1>PORTOFOLIO - MUHAMMAD JAZULI</h1></section>
+    <img src="../assets/input.JPG" alt="ijal" />
+    <div class="biodata">
+      <br /><br /><br />
+      <section id="biodata"><h2>Data Diri</h2></section>
+      <p><strong>Nama:</strong> Muhammad Jazuli</p>
+      <p><strong>Usia:</strong> 23 Tahun</p>
+      <p><strong>Email:</strong> ijalze940@gmail.com</p>
+      <p><strong>Hobi:</strong> mencintai tanpa dicintai</p>
+      <p><strong>Kelebihan:</strong> banyak kekurangan</p>
+      <p>
+        <strong>Deskripsi:</strong> Saya adalah seorang penulis dan pengembang
+        web yang suka bercerita. Saya memiliki minat dalam menulis cerita random
+        tapi belum pernah saya publish hehehe.
+      </p>
+    </div>
+    <div class="pendidikan">
+      <h2>Jenjang Pendidikan</h2>
+      <ul>
+        <li>SMK Bhakti Persada Bekasi (2017 - 2020)</li>
+        <li>
+          Institut Teknologi dan Bisnis Semarang, S1 Sistem Teknologi Informasi
+          (2023 - sekarang)
+        </li>
+      </ul>
+    </div>
+    <br />
+    <br />
+  </body>
+</html>

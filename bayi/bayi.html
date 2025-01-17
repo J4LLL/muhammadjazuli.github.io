@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bayi jalan</title>
+
+    <style>
+      #container {
+        width: 100%;
+        height: 400px;
+        position: relative;
+        background: yellow;
+      }
+      #bayi {
+        width: 60px;
+        height: 60px;
+        position: relative;
+        left: 0px;
+        top: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <button><a href="../index.html">back</a></button>
+    <h2>Tugas Web Programming</h2>
+    <h3>Bayi</h3>
+    <h6 id="navigasi">Navigasi</h6>
+
+    <div id="container">
+      <img id="bayi" src="bayi-kanan.jpg" alt="Gambar Bayi" />
+    </div>
+    <script>
+      let keyPress = document.addEventListener("keydown", (event) =>
+        myKey(event)
+      );
+      let rute = 0;
+      let hPosition = 0;
+      let vPosition = 0;
+      let maxLayar = innerWidth - 80;
+      console.log(maxLayar);
+
+      function myKey(event) {
+        let navigasi = document.getElementById("navigasi");
+        console.log(event.key);
+
+        let moveBayi = document.getElementById("bayi");
+
+        // Jika Gajah Bergerak
+        if (event.key == "ArrowRight" && hPosition < maxLayar) {
+          // Jalan ke Kanan
+          hPosition = hPosition + 10;
+          navigasi.innerHTML = "Navigasi: " + event.key;
+          moveBayi.src = "bayi-kanan.jpg";
+        } else if (event.key == "ArrowLeft" && hPosition != 0) {
+          // Jalan ke Kiri
+          hPosition = hPosition - 10;
+          navigasi.innerHTML = "Navigasi: " + event.key;
+          moveBayi.src = "bayi-kiri.jpg";
+        } else if (event.key == "ArrowUp" && vPosition != 0) {
+          // Jalan ke Atas
+          navigasi.innerHTML = "Navigasi: " + event.key;
+          vPosition = vPosition - 10;
+          moveBayi.src = "bayi-atas.jpg";
+        } else if (event.key == "ArrowDown" && vPosition < 360) {
+          // Jalan ke Bawah
+          navigasi.innerHTML = "Navigasi: " + event.key;
+          vPosition = vPosition + 10;
+          moveBayi.src = "bayi-bawah.jpg";
+        } else {
+          navigasi.innerHTML = "Navigasi: Aduh Kejedot";
+        }
+        moveBayi.style.left = hPosition + "px";
+        moveBayi.style.top = vPosition + "px";
+        console.log(hPosition);
+        console.log(vPosition);
+      }
+    </script>
+  </body>
+</html>
